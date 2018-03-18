@@ -1,0 +1,76 @@
+
+.body-view{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.bg-view {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #0f0;*/
+}
+
+/*form module*/
+#login-form {
+  width: 50%;
+  height: 400px;
+  padding: 4%;
+  background-color: #e0ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-title-label {
+  height: 8%;
+  color: #0000cd;
+  font-size: 24px;
+}
+.form-item {
+  display: flex;
+  /*background-color: #fff;*/
+  width: 60%;
+  height: 20%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.form-input-label{
+  color: #666;
+  font-size: 20px;
+  line-height: 30px;
+  /*background-color: #f00;*/
+}
+input::-webkit-input-placeholder {
+  font-size: 16px;
+  text-align: left;
+}
+.form-input {
+  /*background-color: #f00;*/
+  height: 30px;
+  font-size: 20px;
+  color: #333;
+  width: 60%;
+}
+
+.form-button-div{
+  margin-top: 4%;
+  height: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /*background-color: #f00;*/
+  justify-content: center;
+  align-items: center;
+}
+.form-button {
+  width: 60%;
+  height: 30%;
+  margin-bottom: 20px;
+  background-color: #ffd700;
+  color: #0000cd;
+  font-size: 24px;
+}

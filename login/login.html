@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body class="body-view">
+  <div class="bg-view">
+    <form action="" id="login-form" method="get">
+      <label class="form-title-label">“我爱被单词”登录系统</label>
+      <div class="form-item">
+        <label class="form-input-label">账号：</label>
+        <input id="input-account" type="text" name="account" class="form-input" placeholder="请输入账号/手机号" autofocus autocomplet="on" 
+        />
+      </div>
+      <div class="form-item">
+        <label class="form-input-label">密码：</label>
+        <input id="input-password" type="password" name="password" class="form-input" placeholder="请输入密码" maxlength="6" autocomplet="on"
+        />
+      </div>
+      <div class="form-button-div">
+        <button id="login-btn" type="button" class="form-button">登录</button>
+        <button id="register-btn" type="button" class="form-button">注册</button>
+      </div>
+    </form>
+  </div>
+</body>
+  <script type="text/javascript" >
+    let loginBtn = document.getElementById('login-btn')
+    let registerBtn = document.getElementById('register-btn')
+    let accountInput = document.getElementById('input-account')
+    let passwordInput = document.getElementById('input-password')
+    loginBtn.onclick = function(){
+      // 检查账号密码
+      if(accountInput.value.length == 0){
+        alert('请输入账号')
+        return
+      }
+      if(passwordInput.value.length == 0){
+        alert('请输入密码')
+        return
+      }
+      // TODO 登录验证
+      // 登录成功显示
+      alert('登录成功')
+      // TODO 登录成功跳转
+      
+
+    }
+    registerBtn.onclick = ()=>{
+      console.log('todo register')
+    }
+  </script>
+</html>
